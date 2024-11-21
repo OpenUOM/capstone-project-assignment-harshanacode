@@ -23,7 +23,6 @@ export class AddNewStudentComponent implements OnInit {
       hometown : value.Hometown
     }
 
-
     this.service.addStudent(student).subscribe((response)=>{
       this.router.navigate(['student'])
     },(error)=>{
