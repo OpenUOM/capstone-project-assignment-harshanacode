@@ -24,7 +24,6 @@ export class AddNewTeacherComponent implements OnInit {
 
 
     this.service.addTeacher(teacher).subscribe((response)=>{
-      this.router.navigate([''])
     },(error)=>{
       console.log('ERROR - ', error)
     })
