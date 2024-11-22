@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.actor != 'github-classroom[bot]'
     steps:
+    - uses: actions/checkout@v3
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Backend List Teachers
